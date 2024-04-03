@@ -3,6 +3,7 @@ import os
 import setuptools
 
 here = os.path.abspath(os.path.dirname(__file__))
+pipe = pipeline("text-generation", model="llm-blender/PairRM", trust_remote_code=True)
 
 with open("README.md", "r", encoding="UTF-8") as fh:
     long_description = fh.read()
